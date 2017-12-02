@@ -20,7 +20,18 @@ img {
   max-height: 100%;
   max-width: 100%;
 }
+.abs-centered {
+  position: relative;
+  top: 50%;
+  margin-top: -50px;
+}
 /*---*/
+.cont {
+  width: 45%;
+  color: black;
+  left: 25%;
+  right: 25%;
+}
 /* css for the top admin A--starts*/
 .connected-checker-card {
   background-color: ghostwhite;
@@ -159,6 +170,10 @@ gets the permission to answer.*/
   color: white;
   min-height: 40px;
 }
+.director:hover {
+  background-color: teal;
+  color: white;
+}
 .show-correct-answer-button {
   background-color: green;
   color: white;
@@ -166,7 +181,7 @@ gets the permission to answer.*/
   text-transform: uppercase;
 }
 .show-correct-answer-button:hover {
-  background-color: white;
+  background-color: white ;
   color: green;
 }
 .load-and-send {
@@ -198,13 +213,4 @@ gets the permission to answer.*/
 .connected-user-card-selected {
   background-color: orange;
   color: white;
-}
-.feedback {
-  position: fixed;
-  z-index: 1;
-  width: 50%;
-  height: 50%;
-  left: 11.5%;
-  /*right: 25%;*/
-  top: 18%;
 }

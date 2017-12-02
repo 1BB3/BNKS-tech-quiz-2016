@@ -6,7 +6,7 @@ $(document).ready(function() {
         data: {
             user: user
         },
-        async: true,
+        async: false,
         cache: false,
         success: function(tule) {
             if (tule == "locked") {
@@ -14,22 +14,10 @@ $(document).ready(function() {
             }
         }
     });
-     $(".feedback-sprite-success").hide();
-    $(".feedback-sprite-fail").hide();
-
-    // $.ajax({
-    //     type: 'post',
-    //     url: 'score.php',
-    //     async: true,
-    //     cache: false,
-    //     success: function(tux) {
-    //         $('#main_score').html(tux);
-    //     }
-    // });
 });
 
-// var first_load = 1;
-var question_number = 8;
+var first_load = 1;
+var question_number = 0;
 var activity_number = 0;
 var var_get_content, var_get_activities, var_show_answer;
 var set_time = 500;
@@ -39,12 +27,12 @@ var set_time = 500;
 //set function to show the correct answer
 
 function show_answer() {
-  clearInterval(var_get_activities);
-  clearInterval(var_get_content);
+    clearInterval(var_get_activities);
+    clearInterval(var_get_content);
     $.ajax({
         url: 'show_answer.php',
         type: 'post',
-        async: true,
+        async: false,
         cache: false,
         success: function(warlock) {
             console.log(warlock);
@@ -54,7 +42,6 @@ function show_answer() {
                     "color": "white"
                 });
                 clearInterval(var_show_answer);
-                clearInterval(var_get_activities);
                 call_get_content();
             }
         }
@@ -81,8 +68,6 @@ function startTimer() {
 function stopTimer() {
     $('.enabled').off();
     $('.enabled').removeClass('enabled').addClass('disabled');
-    clearInterval(var_get_activities);
-    // call_get_content();
     call_show_answer();
     //    $(".enabled").attr("disabled", "disabled");
 }
@@ -148,7 +133,7 @@ var get_activities = function() {
             activity_number: activity_number
         },
         dataType: "json",
-        async: true,
+        async: false,
         cache: false,
         success: function(ratm) {
             if (ratm) {
@@ -160,26 +145,19 @@ var get_activities = function() {
                             "background-color": "green",
                             "color": "white"
                         });
-                        // $(".feedback-sprite-success").show('300').hide('300');
-                        clearInterval(var_get_activities);
-                        call_get_content();
+
                         $("#user-score-" + ratm[1]).html("<div class='animated flip'>" + ratm[2] + "</div>");
                     } else {
                         $($.trim(("#" + ratm[0]).replace(/ /g, "-"))).css({
                             "background-color": "red",
                             "color": "white"
                         });
-                      // $(".feedback-sprite-fail").addClass('animated tada').show().hide();
-                        clearInterval(var_get_activities);
-                        // clearInterval(var_get_content);
                         call_show_answer();
                     }
-                    // clearInterval(var_get_activities);
-                    // call_get_content();
                 });
             }
-            // clearInterval(var_get_activities);
-            // call_get_content();
+            clearInterval(var_get_activities);
+            call_get_content();
         }
     });
 }
@@ -192,13 +170,13 @@ var get_content = function(param) {
             user: user,
             question_number: question_number
         },
-        async: true,
+        async: false,
         cache: false,
         success: function(data) {
             if (data) {
                 question_number++;
                 $('#main').html(data);
-                secInitial = 40;
+                secInitial = 20;
                 sec = secInitial;
                 circum = Math.floor(2 * Math.PI * 60) + 7;
                 offsetValueCounter = circum / secInitial, offsetValue = offsetValueCounter;
@@ -213,7 +191,7 @@ var get_content = function(param) {
                     $.ajax({
                         type: 'post',
                         url: 'score.php',
-                        async: true,
+                        async: false,
                         cache: false,
                         success: function(tux) {
                             $('#main_score').html(tux);
@@ -236,7 +214,7 @@ var get_content = function(param) {
                                 user: user,
                                 question_number: question_number
                             },
-                            async: true,
+                            async: false,
                             cache: false,
                             success: function() {}
                         });

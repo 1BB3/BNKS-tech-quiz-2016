@@ -1,9 +1,8 @@
 <?php
   require_once "define_mcq.php";
-  $gabs = new mcq(10);
+  $gabs = new mcq($question_number);
   $gabs->randomize();
-  // $isdisabled = ($_POST['user']==$per->user_who_will_play)? $isdisabled = "enabled" : $isdisabled = "disabled";
-  $isdisabled = "disabled";
+  $isdisabled = ($_POST['user']==$per->user_who_will_play)? $isdisabled = "enabled" : $isdisabled = "disabled";
 ?>
 
 

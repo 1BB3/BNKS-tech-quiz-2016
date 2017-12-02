@@ -2,7 +2,7 @@
 
 //----
 
-//out: theme.css, sourcemap: true, compress: false
+//out: theme.css, sourcemap: true, compress: true
 
 @primary:#f8c4e8;
 @grad-text:#ffffff;
@@ -30,7 +30,18 @@ img {
   max-height: 100%;
   max-width: 100%;
 }
+.abs-centered {
+  position: relative;
+  top: 50%;
+  margin-top: -50px;
+}
 /*---*/
+.cont {
+  width: 45%;
+  color: black;
+  left: 25%;
+  right: 25%;
+}
 /* css for the top admin A--starts*/
 .connected-checker-card{
   .ques-card;
@@ -155,17 +166,22 @@ gets the permission to answer.*/
   min-height: 40px;
 }
 
+.director:hover{
+  background-color: teal;
+  color: white;
+}
+
 .show-correct-answer-button{
   background-color: green;
   color: white;
   font-size: 25px;
   text-transform: uppercase;
 }
-
 .show-correct-answer-button:hover{
-  background-color: white;
+  background-color: white ;
   color: green;
 }
+
 .load-and-send{
   margin: 10px;
   padding:2px;
@@ -195,13 +211,4 @@ gets the permission to answer.*/
 .connected-user-card-selected{
   background-color: orange;
   color: white;
-}
-.feedback{
-      position: fixed;
-      width: 50%;
-      height: 50%;
-    left: 25%;
-    right: 25%;
-      top: 18%;
-    // visibility: hidden;
 }

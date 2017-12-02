@@ -1,18 +1,11 @@
-#GNQuiz
+#BNKS-tech-quiz-2016
 
-##Question and option quiz that can be hosted on LAN.
+- This repo was created just for the purpose of an upcoming event in Budhanilkantha School. 
+- It contains the necessary files for the technology that we are going to use for the competition. 
+- Check out the *Projects* tab above to know more about the project
+- *For now this project is running under very very experimental phase as if it is a joke (experiment).*
 
-###Features :
-1. Multiplayer with 1 admin and any number of clients.
-2. Show options and correct answer.                                                                     
-3. Options and activites visible to all clients.                             
-4. Custom question and answer database.                      
-5. Graphical timer and auto timeout.
+------
 
--------------------------------------------------------------------
-*open project by:
-Sanjeev KC  https://github.com/1BB3
-Nabin Dhakal https://github.com/1BA4
-Ankit Koirala https://github.com/1BE6-ankit
+open project by : *BNKSdotNet club , Budhanilkantha School*
 
-Forked from : https://github.com/1BA4/BNKS-tech-quiz-2016

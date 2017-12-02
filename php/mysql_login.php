@@ -1,6 +1,6 @@
 <?php // login.php
     $db_hostname = 'localhost';
-    $db_database = 'class9';
+    $db_database = 'tz';
     $db_username = 'root';
     $db_password = '';
     $db_object = mysqli_connect($db_hostname, $db_username, $db_password, $db_database);

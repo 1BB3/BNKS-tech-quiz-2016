@@ -4,7 +4,7 @@
   $ubuntu = new activities();
   $ayurveda = array();
   $send_nothing = 0;
-  if ($_POST['activity_number']>=$ubuntu->activity_number) {$send_nothing = 1;} else {
+  if ($_POST['activity_number']==$ubuntu->activity_number) {$send_nothing = 1;} else {
     $ayurveda[0] = $ubuntu->activity_answer;
       if($ubuntu->score_update_user){
         $ayurveda[1] = $ubuntu->score_update_user;

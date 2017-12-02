@@ -1,0 +1,46 @@
+.parent{
+    position: relative;
+    font-size: 2em; 
+}
+
+.changeContent{
+    width:50%;
+    position: relative;
+    float: left;
+}
+.timerBox{
+    width: 49%;
+    height: 300px;
+    display: border-box;
+    background: #444;
+    border: 1px solid black;
+    position: relative;
+    float: left;
+}
+
+#seconds{
+    fill:#15ad15;
+}
+
+.circle {
+  position: relative;
+  width: 200px;
+  height: 200px;
+}
+
+#mainCircle{
+    fill: #fff;
+    stroke:#15ad15;
+    stroke-width:10;
+    stroke-dashoffset:0;
+    stroke-dasharray:380;
+    transition: all 1s ease;
+}
+#ghostCircle{
+    fill: #fff;
+    stroke:#fff;
+    stroke-width:10;
+}
+
+
+

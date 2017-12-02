@@ -1,8 +1,9 @@
-#GNQuiz
+# GNQuiz
 
-##Question and option quiz that can be hosted on LAN.
+## Question and option quiz that can be hosted on LAN.
 
-###Features :
+### Features :
+
 1. Multiplayer with 1 admin and any number of clients.
 2. Show options and correct answer.
 3. Options and activites visible to all clients. 

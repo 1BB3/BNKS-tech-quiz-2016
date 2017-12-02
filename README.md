@@ -11,9 +11,9 @@
 5. Graphical timer and auto timeout.
 
 -------------------------------------------------------------------
-*open project by:
-Sanjeev KC  https://github.com/1BB3
-Nabin Dhakal https://github.com/1BA4
-Ankit Koirala https://github.com/1BE6-ankit
+_open project by:_
+-Sanjeev KC  https://github.com/1BB3
+-Nabin Dhakal https://github.com/1BA4
+-Ankit Koirala https://github.com/1BE6-ankit
 
 Forked from : https://github.com/1BA4/BNKS-tech-quiz-2016

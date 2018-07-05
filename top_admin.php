@@ -13,19 +13,7 @@
    <title>MCQ for BNKS</title>
     </head>
     <body>
-<!--
-       ques-cl : question class
-       ans-cl : answer class
-       more
- -->
-        <!-- <div>
-          <h1></h1>Please wait for all the clients to connect</h1>
-              <a href="php/client.php">
-          <button type="button" class="go-button btn btn-primary">
-              Start the quiz
-          </button>
-              </a>
-        </div> -->
+
 
         <div class="container">
           <div class="row">
@@ -43,10 +31,11 @@
             </div>
 
           </div>
+          <!-- button to start thequiz when ready -->
           <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
               <div class="carry-on hand-cursor">
-                Walk with me in hell
+                Start Quiz
               </div>
             </div>
           </div>
